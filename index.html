@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORONAVIRUS</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="action">
+        <div class="profile" onclick="menuToggle()">
+            <img src="img/menu.png" alt="Menu"  >
+        </div>
+    
+        <div class="menu">
+            <h3>Mas Informacion<br><span>Enlaces utiles</span></h3>
+            <ul>
+                <li><img src="img/liquid-soap.png" ><a href="https://www.argentina.gob.ar/coronavirus/cuidarnos" onclick="menuToggle()">Cuidados</a></li>
+                <li><img src="img/info.png" ><a href="https://www.argentina.gob.ar/salud/coronavirus-COVID-19/sala-situacion" onclick="menuToggle()">Información Epidemiológica</a></li>
+                <li><img src="img/contact.png" ><a href="https://www.argentina.gob.ar/coronavirus/telefonos" onclick="menuToggle()">Telefonos Utiles</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="banner">
+        <header>
+            <h2 class="logo">covid-19</h2>
+            <div class="toggle" onclick="toggleMenu();"></div>
+        </header>
+        <video src="video/production ID_4753946.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Cuidemonos</h2>
+            <h3>El covid-19 ya es parte de nuestra vida</h3>
+            <p>La COVID-19 es la enfermedad infecciosa causada por el coronavirus que se ha descubierto más recientemente. Tanto este nuevo virus como la enfermedad que provoca eran desconocidos antes de que estallara el brote en Wuhan (China) en diciembre de 2019. Actualmente la COVID-19 es una pandemia que afecta a muchos países de todo el mundo.
+            </p>
+            <a href="https://www.argentina.gob.ar/salud/coronavirus-COVID-19?utm_source=search&utm_medium=cpc&utm_campaign=coronavirus&utm_term=grants&utm_content=nacional&gclid=CjwKCAiA4o79BRBvEiwAjteoYHh9tcVj_PPUDMbUiErJyi1D2pAW7t8zu4VVWJCtKEfYiFM5OKMofhoCT2kQAvD_BwE">Mas informacion</a>
+        </div>
+        <ul class="sci">
+            <li><a href="https://www.facebook.com/msalnacion"><img src="img/facebook.png" ></a></li>
+            <li><a href="https://twitter.com/msalnacion"><img src="img/twitter.png" ></a></li>
+            <li><a href="https://www.instagram.com/msalnacion/"><img src="img/instagram.png" ></a></li>
+        </ul>
+    </section>
+
+    
+    <script>
+        function menuToggle(){
+            const toggleMenu = document.querySelector('.menu')
+            toggleMenu.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
