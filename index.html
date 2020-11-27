@@ -1,14 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CORONAVIRUS</title>
-    <link rel="stylesheet" href="style/style.css">
-</head>
-<body>
-    <div class="action">
-        <div class="profile" onclick="menuToggle()">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CORONAVIRUS</title>
+        <link rel="stylesheet" href="style/estilos.css">
+        <link rel="stylesheet" href="style/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Open+Sans" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    </head>
+    <body>
+        <section class="overlay" id="overlay">
+            <div class="popup" id="popup">
+                <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+                <h3>COMUNICATE CON NOSOTROS</h3>
+                <form action="mailto:Mariasolmelgar@gmail.com" enctype="text/plain" method="post">
+                    <div class="contenedor-inputs">
+                        <label for="name"></label>
+                        <input type="text" name="name" placeholder="Nombre">
+                        <label for="email"></label>
+                        <input type="email" name="email" placeholder="Correo">
+                        <label for="mensaje"></label>
+                        <input type="text" name="mensaje" placeholder="Escriba su consula aqui">
+                    </div>
+                    <input type="submit" class="btn-submit" value="Enviar datos">
+                </form>
+            </div>
+        </section>
+        <div class="action">
+            <div class="profile" onclick="menuToggle()">
             <img src="img/menu.png" alt="Menu"  >
         </div>
     
@@ -28,13 +48,13 @@
             <div class="toggle" onclick="toggleMenu();"></div>
         </header>
         <video src="video/production ID_4753946.mp4" muted loop autoplay></video>
-        <div class="overlay"></div>
+        <div class="overlay1"></div>
         <div class="text">
             <h2>Cuidemonos</h2>
             <h3>El covid-19 ya es parte de nuestra vida</h3>
             <p>La COVID-19 es la enfermedad infecciosa causada por el coronavirus que se ha descubierto más recientemente. Tanto este nuevo virus como la enfermedad que provoca eran desconocidos antes de que estallara el brote en Wuhan (China) en diciembre de 2019. Actualmente la COVID-19 es una pandemia que afecta a muchos países de todo el mundo.
             </p>
-            <a href="https://www.argentina.gob.ar/salud/coronavirus-COVID-19?utm_source=search&utm_medium=cpc&utm_campaign=coronavirus&utm_term=grants&utm_content=nacional&gclid=CjwKCAiA4o79BRBvEiwAjteoYHh9tcVj_PPUDMbUiErJyi1D2pAW7t8zu4VVWJCtKEfYiFM5OKMofhoCT2kQAvD_BwE">Mas informacion</a>
+            <button class="a" id="btn-abrir-popup">contacto</button>
         </div>
         <ul class="sci">
             <li><a href="https://www.facebook.com/msalnacion"><img src="img/facebook.png" ></a></li>
@@ -43,7 +63,7 @@
         </ul>
     </section>
 
-    
+    <script src="scripts/popup.js"></script>
     <script>
         function menuToggle(){
             const toggleMenu = document.querySelector('.menu')
